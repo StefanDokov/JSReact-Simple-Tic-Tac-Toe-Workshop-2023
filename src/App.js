@@ -59,7 +59,7 @@ const App = () => {
             />)}
       </div>
       <p>{winMessage || message}</p>
-      {winMessage?  <button onClick={resetBoard}>Again!</button> : <button onClick={resetBoard}>Reset!</button>}
+      {cells.includes("")? winMessage? <button onClick={resetBoard}>Again!</button> : <button onClick={resetBoard}>Reset!</button> : <button onClick={resetBoard}>Again!</button>}
       
     </div>
   )
